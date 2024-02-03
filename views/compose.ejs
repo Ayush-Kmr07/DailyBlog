@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<div class="container">
+    <h1>Compose</h1>
+</div>
+
+
+<form action="/compose" method="post">
+    <div class="container form-flex flex">
+      <div class="mb-3">
+        <label  class="form-label">Title</label>
+        <input type="text" class="form-control shadow-input" name="postTitle">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Image URL</label>
+        <input type="text" class="form-control shadow-input" name="postImgURL">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Post</label>
+        <textarea class="form-control shadow-textarea "  rows="5" name="postBody"></textarea>
+      </div>
+
+      <button type="submit" class="btn  publish-btn">Publish</button>
+    </div>
+</form>
+<%- include('partials/footer') %>

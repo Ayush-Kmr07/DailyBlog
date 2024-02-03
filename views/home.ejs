@@ -1,0 +1,54 @@
+<%- include('partials/header') %>
+
+<div class="blogs-card flex">
+    <div class="container">
+        <% posts.forEach(function(post){ %>
+            <div class="card-item flex">
+                <div>
+                    <img src="<%= post.img_url %> " class="blog-img">
+                </div>
+                    <div class="card-text flex">
+                        <h1 class="title"><%= post.title %></h1>
+                        <p class="blog-content">
+                            <%= post.content.substring(0,200) + "..." %>
+                        </p>
+                        <a href="/posts/<%= post.title %>" class="read-btn" >Read More</a>
+                    </div>
+            </div>
+            <% }); %>
+    </div>
+    <div class="container">
+        <div class="card-item flex">
+            <img src="/Assets/download.jpg" class="blog-img">
+            <div class="card-text flex">
+                <h1 class="title">Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt rem sit nam nemo porro repellendus obcaecati illum cumque et possimus minus eos earum, libero reprehenderit corrupti odit fuga aliquid.</p>
+                <a href="#" class="read-btn" >Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-item flex">
+            <img src="/Assets/download.jpg" class="blog-img">
+            <div class="card-text flex">
+                <h1 class="title">Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt rem sit nam nemo porro repellendus obcaecati illum cumque et possimus minus eos earum, libero reprehenderit corrupti odit fuga aliquid.</p>
+                <a href="#" class="read-btn" >Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-item flex">
+            <img src="/Assets/download.jpg" class="blog-img">
+            <div class="card-text flex">
+                <h1 class="title">Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt rem sit nam nemo porro repellendus obcaecati illum cumque et possimus minus eos earum, libero reprehenderit corrupti odit fuga aliquid.</p>
+                <a href="#" class="read-btn" >Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<%- include('partials/footer') %>

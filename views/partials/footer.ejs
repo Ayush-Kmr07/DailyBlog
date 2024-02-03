@@ -1,0 +1,18 @@
+
+<div class="footer flex">
+    <div class="container foot">
+        <h5>Copyright <%= new Date().getFullYear() %></h5>
+
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/3db03ad826.js" crossorigin="anonymous"></script>
+<script>
+    const toggleButton = document.getElementById("nav-toggle");
+    const navLinks = document.getElementById("nav-links")
+    toggleButton.addEventListener('click',()=>{
+        navLinks.classList.toggle("active");
+    });
+</script>
+</body>
+</html>
